@@ -83,6 +83,14 @@ nav{
   box-shadow:0 2px 12px rgba(167,139,250,.3);
 }
 .nav-btn:hover{opacity:.85;transform:translateY(-1px);box-shadow:0 4px 20px rgba(167,139,250,.45);}
+.nav-btn-secondary{
+  font-size:.75rem;font-weight:600;letter-spacing:.5px;
+  padding:.45rem 1.25rem;border-radius:6px;
+  background:transparent;border:1px solid var(--line2);
+  color:var(--sub);text-decoration:none;transition:all .2s;cursor:none;
+  margin-right:.5rem;
+}
+.nav-btn-secondary:hover{border-color:rgba(167,139,250,.3);color:var(--ac);transform:translateY(-1px);}
 
 /* ── LAYOUT ── */
 .wrap{width:100%;max-width:1280px;margin:0 auto;padding:0 3rem;box-sizing:border-box;position:relative;z-index:1;}
@@ -507,7 +515,7 @@ footer span{color:var(--ac);}
 
 /* ── RESPONSIVE ── */
 @media(max-width:900px){
-  nav{padding:1rem 0;}.nav-links,.nav-btn{display:none;}
+  nav{padding:1rem 0;}.nav-links,.nav-btn,.nav-btn-secondary{display:none;}
   .nav-inner, .wrap, .hero-grid{padding:0 1.5rem;}
   #hero{padding:5rem 0 0 0;}
   .hero-grid{flex-direction:column-reverse;gap:3rem;text-align:center;}
@@ -543,6 +551,7 @@ footer span{color:var(--ac);}
         <li><a href="#services">Services</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+      <a href="Naznin_Resume.pdf" download class="nav-btn-secondary">Resume</a>
       <a href="mailto:nazninakhtar17@gmail.com" class="nav-btn">Hire me</a>
     </div>
   </div>
@@ -572,11 +581,15 @@ footer span{color:var(--ac);}
         <span class="tag hi">▸ Play Store Published</span>
       </div>
       <div class="h-cta">
-        <a href="https://github.com/Naaz123786" target="_blank" class="btn btn-solid">
+        <a href="Naznin_Resume.pdf" download class="btn btn-solid">
+          <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+          Download Resume
+        </a>
+        <a href="https://github.com/Naaz123786" target="_blank" class="btn btn-outline">
           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
           GitHub
         </a>
-        <a href="https://www.linkedin.com/in/naznin-akhtar-1bb7412a1" target="_blank" class="btn btn-outline">
+        <a href="https://www.linkedin.com/in/naznin-akhtar" target="_blank" class="btn btn-outline">
           <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
           LinkedIn
         </a>
@@ -994,7 +1007,7 @@ footer span{color:var(--ac);}
             <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/naznin-akhtar-1bb7412a1" target="_blank" class="btn btn-outline">
+          <a href="https://www.linkedin.com/in/naznin-akhtar" target="_blank" class="btn btn-outline">
             <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
             LinkedIn
           </a>
